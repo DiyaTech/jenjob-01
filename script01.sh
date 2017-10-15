@@ -2,6 +2,7 @@
 ls -ltr
 echo "This job was executed via github"
 uname -a;whoami
+clear
 echo
 echo
 echo
