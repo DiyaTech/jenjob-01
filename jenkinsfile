@@ -11,6 +11,15 @@ stage("Finding Hostname"){
 steps{
     sh(script:'hostname')
 }
+
+stage("Finding Username"){
+
+steps{
+    sh(script:'whoami')
+}
+
+
+
 }
 }
 }
