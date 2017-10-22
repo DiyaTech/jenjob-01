@@ -6,11 +6,11 @@ label 'master'
 
 stages{
 
-stage("Finding Hostname")
+stage("Finding Hostname"){
 
 steps{
     sh(script:'hostname')
-
+}
 }
 }
 }
