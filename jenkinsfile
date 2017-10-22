@@ -1,0 +1,27 @@
+pipeline {
+
+agent {
+label 'master'
+}
+
+stages {
+
+stage ("Finding Hostname")
+
+steps {
+    sh(script:'hostname')
+
+}
+}
+}
+
+
+
+
+
+
+
+
+
+
+}
