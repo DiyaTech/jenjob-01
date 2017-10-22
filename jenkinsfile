@@ -1,25 +1,22 @@
 pipeline{
 
-agent{
-label 'master'
-}
+        agent{
+            label 'master'
+             }
 
 stages{
 
-stage("Finding Hostname"){
+            stage("Finding Hostname"){
 
-steps{
-    sh(script:'hostname')
-}
+                steps{
+                    sh(script:'hostname')
+                       }
+                                    }
+            stage("Finding Username"){
 
-stage("Finding Username"){
+                        steps{
+                    sh(script:'whoami')
+                        }
+                                        }
 
-steps{
-    sh(script:'whoami')
-}
-
-
-
-}
-}
 }
