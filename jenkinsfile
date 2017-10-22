@@ -1,27 +1,16 @@
-pipeline {
+pipeline{
 
-agent {
+agent{
 label 'master'
 }
 
-stages {
+stages{
 
-stage ("Finding Hostname")
+stage("Finding Hostname")
 
-steps {
+steps{
     sh(script:'hostname')
 
 }
 }
-}
-
-
-
-
-
-
-
-
-
-
 }
